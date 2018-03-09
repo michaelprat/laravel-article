@@ -49,7 +49,8 @@ class kategoricontroller extends Controller
      */
     public function show($id)
     {
-        //
+        $tampung=kategori::find($id);
+        return view('kategori.halamantampilkatagor')->with('isi',$tampung);
     }
 
     /**
